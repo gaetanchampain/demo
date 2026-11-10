@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Démo Champain Advisory pour Colibri Sécurité 4:5</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="En 2 minutes : comment un installateur en vidéosurveillance, alarme et contrôle d’accès automatise ses devis, ses plans, ses commandes fournisseurs, le planning de ses techniciens et le pilotage de son activité.">
+<meta property="og:type" content="video.other">
+<meta property="og:title" content="Démo préparée pour Colibri Sécurité">
+<meta property="og:description" content="La démo Champain Advisory en 2 minutes, adaptée à Kwixéo.">
+<meta property="og:url" content="https://gaetanchampain.github.io/demo/colibri/4x5/">
+<meta property="og:image" content="https://gaetanchampain.github.io/demo/colibri/4x5/affiche.jpg">
+<meta property="og:video" content="https://gaetanchampain.github.io/demo/colibri/4x5/demo-colibri-securite-4x5.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1080">
+<meta property="og:video:height" content="1350">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
+<style>
+/* Mise en page : la vidéo en 4:5 à gauche, le texte et les coordonnées à droite ; une seule colonne sur mobile. Charte Champain Advisory, une seule ambiance sombre. */
+:root {
+  --ink: #0F0F12;
+  --surface: #18181E;
+  --line: rgba(247, 245, 240, .12);
+  --fg: #F7F5F0;
+  --mute: #A19D92;
+  --lime: #C6FF3E;
+  --font: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: dark;
+}
+body {
+  background: var(--ink);
+  color: var(--fg);
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-block: 32px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid;
+  gap: 28px;
+}
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+header img { height: 46px; width: auto; display: block; }
+header span { font-size: 14px; color: var(--mute); font-weight: 600; }
+h1 {
+  margin: 8px 0 0;
+  font-stretch: 125%;
+  font-weight: 800;
+  font-size: clamp(30px, 5.2vw, 56px);
+  line-height: 1.04;
+  letter-spacing: -.02em;
+  text-wrap: balance;
+  max-width: 18ch;
+}
+.lead { margin: 0; color: var(--mute); font-size: clamp(17px, 2vw, 20px); max-width: 60ch; }
+.player {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #000;
+  aspect-ratio: 4 / 5;
+  max-width: 100%;
+  box-shadow: 0 40px 90px rgba(0, 0, 0, .45);
+}
+.player video { display: block; width: 100%; height: 100%; background: #000; }
+.player video:focus-visible { outline: 3px solid var(--lime); outline-offset: -3px; }
+.meta { display: flex; gap: 10px; flex-wrap: wrap; }
+.meta span { padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line); font-size: 14px; font-weight: 600; color: var(--mute); }
+.contact {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding: 28px;
+  border-radius: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+.contact h2 { margin: 0 0 6px; font-stretch: 118%; font-weight: 800; font-size: 26px; letter-spacing: -.01em; }
+.contact p { margin: 0; color: var(--mute); }
+.who { display: grid; gap: 6px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.who b { font-weight: 800; color: var(--fg); }
+.who .sel { user-select: all; }
+.who a { color: var(--lime); text-decoration: none; border-bottom: 1px solid rgba(198, 255, 62, .4); justify-self: start; }
+.who a:hover, .who a:focus-visible { border-bottom-color: var(--lime); outline: none; }
+footer { font-size: 13px; color: var(--mute); }
+.main { display: grid; grid-template-columns: minmax(0, 520px) minmax(0, 1fr); gap: 40px; align-items: start; }
+.side { display: grid; gap: 24px; align-content: start; }
+.side .contact { grid-template-columns: minmax(0, 1fr); }
+@media (max-width: 900px) { .main { grid-template-columns: minmax(0, 1fr); } .player { max-width: 520px; } }
+@media (max-width: 720px) {
+  .contact { grid-template-columns: minmax(0, 1fr); padding: 22px; }
+  header img { height: 38px; }
+}
+</style>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} body{margin:0} img{max-width:100%}</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <img src="logo_ca.png" alt="Champain Advisory">
+    <span>Conseil en transformation digitale</span>
+  </header>
+
+  <div style="display:grid;gap:14px">
+    <h1>Vos devis de sécurité, du catalogue au pilotage</h1>
+    <p class="lead">En 2 minutes, voici comment un installateur en vidéosurveillance, alarme et contrôle d’accès automatise ses devis, ses plans, ses commandes fournisseurs, le planning de ses techniciens et le pilotage de son activité, depuis ChatGPT et Kwixéo.</p>
+  </div>
+
+  <div class="main">
+    <div class="player">
+      <video id="demo" controls playsinline preload="metadata" poster="affiche.jpg">
+        <source src="demo-colibri-securite-4x5.mp4" type="video/mp4">
+        Votre navigateur ne lit pas cette vidéo.
+      </video>
+    </div>
+
+    <div class="side">
+
+      <section class="contact" aria-label="Contact">
+      <div>
+        <h2>Préparé pour Colibri Sécurité</h2>
+        <p>Vos devis dans Kwixéo, depuis ChatGPT.</p>
+      </div>
+      <div class="who">
+        <b>Gaëtan Champain</b>
+        <span class="sel">gaetan@champainadvisory.com</span>
+        <span class="sel">06 73 04 49 32</span>
+        <a href="https://www.linkedin.com/in/gaetanchampain" target="_blank" rel="noopener">linkedin.com/in/gaetanchampain</a>
+      </div>
+      </section>
+    </div>
+  </div>
+
+  <footer>Champain Advisory. Les données du client présentées dans la démo sont fictives.</footer>
+</div>
+
+</body>
+</html>
